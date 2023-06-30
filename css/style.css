@@ -31,9 +31,44 @@ p {
   margin: 0;
   font-family: "Roboto", sans-serif, Arial, sans-serif;
 }
+/* nav bar */
+nav {
+  height: 50px;
+  background: var(--light-color);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
-/* header section */
-header {
+  z-index: 200;
+}
+
+nav .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 50px;
+}
+
+.menu-items a {
+  color: var(--dark-gray);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 50px;
+}
+
+/* hero section */
+.hero-banner {
   display: flex;
   justify-content: center;
   height: screen;
@@ -42,27 +77,119 @@ header {
   background-image: url("../images/header-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
-    height:100vh;
+  height: 100vh;
+}
+
+.name {
+  font-family: "Ms Madi", cursive;
+  font-size: 80px;
 }
 
 /* about me section */
 .about-me-container {
   display: flex;
   flex-direction: row;
-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 
   justify-content: center;
-  flex: 500px;
-  margin:10px;
 
+  flex: 500px;
+  margin: 100px 150px 100px 150px;
+}
+.about-me-container > section {
+  padding: 20px;
 }
 
 .self-portrait-img {
   max-width: 100%;
   height: auto;
+  border-radius: 30%;
 }
 
 .about-me-text {
-  padding:10px;
+  padding: 10px;
+}
+
+/* portfolio section */
+.page-section {
+  align-content: center;
+  width: 100%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+  /* background-color: var(--light-green); */
+}
+
+.project {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  justify-content: center;
+
+  font-size: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 600px;
+  height: 300px;
+  height: max-content;
+  margin: 30px;
+}
+
+.project-heading {
+  opacity: 0;
+  height: 250px;
+}
+.project-heading:hover {
+  cursor: pointer;
+  background-color: var(--light-red);
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--dark-gray);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.project-name {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+
+#project1 {
+  flex: 2 2;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#project2 {
+  flex: 1 1;
+
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#project3 {
+  flex: 1 1;
+
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+#project4 {
+  flex: 1 1;
+
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+#project5 {
+  flex: 1 1;
+
+  background-image: url("../images/02-portfolio-5.jpg");
 }
