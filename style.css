@@ -110,25 +110,37 @@ nav .wrapper {
 
 .about-me-text {
   padding: 10px;
+display: flex ;
+flex-direction: column;
+justify-content: center;
+
+
 }
 
 /* portfolio section */
 .page-section {
   align-content: center;
   width: 100%;
+  
 }
 
 .project-container {
   display: flex;
-  flex-direction: column;
+
+  flex-direction: row;
+  justify-content: space-evenly;
   width: 100%;
-  align-content: center;
   flex-wrap: wrap;
-  /* background-color: var(--light-green); */
+  /* border: 2px red;
+  border-style: solid; */
+
+  background-color: var(--dark-red);
 }
 
 .project {
-  color: rgba(255, 255, 255, 0.8);
+  /* border: 2px red;
+  border-style: solid; */
+
   text-align: center;
   justify-content: center;
 
@@ -136,25 +148,29 @@ nav .wrapper {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 30px;
 
-  width: 600px;
-  height: 300px;
-  height: max-content;
-  margin: 30px;
+  height: 50%;
+  width: 30%;
+  margin: 5%;
+
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+
 }
 
 .project-heading {
+  display:flex;
+  justify-content: center; 
+  flex-direction: column;
   opacity: 0;
   height: 250px;
 }
 .project-heading:hover {
   cursor: pointer;
-  background-color: var(--light-red);
-  opacity: 0.9;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 30px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   color: var(--dark-gray);
   font-size: 18px;
@@ -168,28 +184,24 @@ nav .wrapper {
 }
 
 #project1 {
-  flex: 2 2;
+
   background-image: url("../images/02-portfolio-1.jpg");
 }
 
 #project2 {
-  flex: 1 1;
 
   background-image: url("../images/02-portfolio-2.jpg");
 }
 
 #project3 {
-  flex: 1 1;
 
   background-image: url("../images/02-portfolio-3.jpg");
 }
 #project4 {
-  flex: 1 1;
 
   background-image: url("../images/02-portfolio-4.jpg");
 }
 #project5 {
-  flex: 1 1;
 
   background-image: url("../images/02-portfolio-5.jpg");
 }
