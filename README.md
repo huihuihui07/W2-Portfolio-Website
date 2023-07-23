@@ -3,7 +3,7 @@
 ## The Repository
 
 
-<img alt="portfolio website screenshot" src="./W2-portfolio-website/images/Hui-FENG-Web-Developer.png">
+<img alt="portfolio website screenshot" src="./images/Hui-FENG-Web-Developer.png">
 
 
 This is a repository of my personal portfolio website, which showcases my web dev portfolio.
