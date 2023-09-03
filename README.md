@@ -8,7 +8,7 @@
 
 This is a repository of my personal portfolio website, which showcases my web dev portfolio.
 
-Deployed link: https://huihuihui07.github.io/W2-portfolio-website/
+Deployed link: https://huihuihui07.github.io/portfolio-website/
 
 ## User Story
 
